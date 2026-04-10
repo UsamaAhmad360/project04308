@@ -9,8 +9,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
+// vite.config.ts
 export default defineConfig({
   plugins: [react(), tailwindcss(), viteSingleFile()],
+  base: '/your-repo-name/', // REPLACE 'your-repo-name' with your actual repo name!
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
